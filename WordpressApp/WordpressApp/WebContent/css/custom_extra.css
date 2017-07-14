@@ -1,0 +1,378 @@
+.home .cycloneslider-template-default .cycloneslider-pager span {
+			  width: 8px;
+			  height: 8px; 
+			  margin-bottom: 31px;}
+			
+			header nav {
+			  right: 3vwpx; }
+			
+			.amazingcarousel-nav {
+			  display: none; }
+			
+			.blog_post_p_div {
+			  line-height: 2em; }
+			
+			.yha {
+			  font-family: 'FreightBig Pro';
+			  font-weight: bold; }
+			  .yha .booknow {
+			    padding-top: 1vw; }
+			    .yha .booknow a:visited, .yha .booknow a:link {
+			      font-size: .6vw;
+			      text-decoration: underline;
+			      font-family: 'ProximaNova-Light' !important;
+			      color: #909090;
+			      font-weight: bold;
+			      text-decoration: none;
+			      color: #000000;
+			      padding-bottom: 10px;
+			      border-bottom: 2px solid #000000;
+			      letter-spacing: .1em; }
+			    .yha .booknow .image120 {
+			      max-width: 125%; }
+			    .yha .booknow .title {
+			      font-size: 2vw;
+			      font-family: 'FreightBig Pro';
+			      line-height: 1em; }
+			    .yha .booknow .datecro {
+			      color: #7b7b7b;
+			      font-weight: bold;
+			      font-size: 1vw;
+			      font-family: 'ProximaNova-Light' !important;
+			      line-height: 1em; }
+			    .yha .booknow .time {
+			      font-size: 1vw;
+			      color: #7b7b7b; }
+			    .yha .booknow .marginforimage {
+			      margin-top: 30px; }
+			    .yha .booknow .margin_15_top_bottom {
+			      margin-top: 15px;
+			      margin-bottom: 15px; }
+			    .yha .booknow .margin-top5vw {
+			      margin-top: 5%; }
+			
+			.yha-position {
+			  position: absolute;
+			  top: 5vw; }
+			
+			@media only screen and (max-width: 40em) {
+			  header nav {
+			    right: 3vw; }
+			  .yha-position {
+			    position: relative; }
+			  .yha {
+			    background-image: none;
+			    background-size: 0 0;
+			    font-weight: bold;
+			    height: auto; }
+			    .yha .margin-top5vw {
+			      margin-top: 1vw; }
+			      .yha .margin-top5vw .small-6:first-child {
+			        text-align: right !important; }
+			      .yha .margin-top5vw .small-6:last-child {
+			        text-align: left !important; }
+			      .yha .margin-top5vw .image120 {
+			        width: 75%; }
+			    .yha .title {
+			      font-size: 25px !important;
+			      font-family: 'FreightBig Pro';
+			      line-height: 1.2em !important;
+			      text-align: center; }
+			    .yha .time {
+			      font-size: 3vw;
+			      color: #7b7b7b;
+			      text-align: center; }
+			    .yha .booknow {
+			      padding-top: 6vw;
+			      text-align: center; }
+			      .yha .booknow a:visited, .yha .booknow a:link {
+			        font-size: 16px;
+			        text-decoration: underline;
+			        font-family: 'ProximaNova-Light' !important;
+			        color: #909090;
+			        font-weight: bold;
+			        text-decoration: none;
+			        color: #000000;
+			        padding-bottom: 10px;
+			        border-bottom: 2px solid #000000;
+			        letter-spacing: .1em; }
+			    .yha .inconjunctionwith {
+			      color: #7b7b7b;
+			      padding-top: 10vw;
+			      padding-bottom: 5vw;
+			      text-align: center; }
+			    .yha .datatimecro {
+			      text-align: center; }
+			    .yha .mobilecro {
+			      display: block; }
+			    .yha .margin-top5vw {
+			      margin-top: 0; }
+			    .yha .margin-top5vw:last-child {
+			      padding-bottom: 30px; }
+			  .whowehelped .inner-logos img {
+			    opacity: 0.7; }
+			  .whatwedo .view-our-service {
+			    padding-top: 20px; } }
+			
+			/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+			@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			  .yha {
+			    background-image: none;
+			    background-size: 0 0;
+			    font-weight: bold;
+			    height: auto; }
+			    .yha .margin-top5vw {
+			      margin-top: 1vw; }
+			      .yha .margin-top5vw .small-6:first-child {
+			        text-align: right !important; }
+			      .yha .margin-top5vw .small-6:last-child {
+			        text-align: left !important; }
+			      .yha .margin-top5vw .image120 {
+			        width: 80%; }
+			      .yha .margin-top5vw .columns:last-child:not(:first-child) {
+			        margin: 0px; }
+			    .yha .title {
+			      font-size: 6vw !important;
+			      font-family: 'FreightBig Pro';
+			      line-height: 1.2em !important;
+			      text-align: center; }
+			    .yha .time {
+			      font-size: 3vw;
+			      color: #7b7b7b;
+			      text-align: center; }
+			    .yha .booknow {
+			      padding-top: 2vw;
+			      text-align: center;
+			      margin: 25px 0 25px 0; }
+			      .yha .booknow a:visited, .yha .booknow a:link {
+			        font-size: 14px;
+			        text-decoration: underline;
+			        font-family: 'ProximaNova-Light' !important;
+			        color: #909090;
+			        font-weight: bold;
+			        text-decoration: none;
+			        color: #000000;
+			        padding-bottom: 10px;
+			        border-bottom: 2px solid #000000;
+			        letter-spacing: .1em; }
+			    .yha .inconjunctionwith {
+			      color: #7b7b7b;
+			      padding: 1vw 2vw;
+			      text-align: center; }
+			    .yha .booknow {
+			      padding-top: 2vw;
+			      text-align: center;
+			      margin: 25px 0 25px 0; }
+			      .yha .booknow a:visited, .yha .booknow a:link {
+			        font-size: 14px;
+			        text-decoration: underline;
+			        font-family: 'ProximaNova-Light' !important;
+			        color: #909090;
+			        font-weight: bold;
+			        text-decoration: none;
+			        color: #000000;
+			        padding-bottom: 10px;
+			        border-bottom: 2px solid #000000;
+			        letter-spacing: .1em; }
+			    .yha .datatimecro {
+			      text-align: center; }
+			    .yha .mobilecro {
+			      display: block; }
+			    .yha .datecro {
+			      color: #7b7b7b;
+			      font-weight: bold;
+			      font-size: 3vw;
+			      font-family: 'ProximaNova-Light' !important;
+			      line-height: 1em; }
+			    .yha .margin-top5vw {
+			      margin-top: 0; }
+			    .yha .margin-top5vw:last-child {
+			      padding-bottom: 20px; }
+			  .section_five .mc4wp-response .mc4wp-success p {
+			    font-size: 15px;
+			    text-align: left;
+			    padding-left: 10px; }
+			    .section_five .mc4wp-response .mc4wp-success p .fa {
+			      margin-right: 5px; } }
+			
+			/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+			@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+			  .yha {
+			    background-size: 100%;
+			    height: 50vw; }
+			    .yha .mobilecro {
+			      display: none; }
+			    .yha .title {
+			      font-size: 30px !important;
+			      font-family: 'FreightBig Pro';
+			      line-height: 1em; }
+			    .yha .time {
+			      font-size: 1vw;
+			      color: #7b7b7b;
+			      text-align: center; }
+			    .yha .booknow a:visited, .yha .booknow a:link {
+			      font-size: 14px; }
+			    .yha .inconjunctionwith {
+			      color: #7b7b7b; }
+			    .yha .datecro {
+			      color: #7b7b7b;
+			      font-weight: bold;
+			      font-size: 1vw;
+			      font-family: 'ProximaNova-Light' !important;
+			      line-height: 1em; } }
+			
+			/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+			@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+			  .yha {
+			    background-size: 100%;
+			    height: 50vw; }
+			    .yha .mobilecro {
+			      display: none; }
+			    .yha .image120 {
+			      max-width: 125%; }
+			    .yha .inconjunctionwith {
+			      color: #7b7b7b; }
+			    .yha .title {
+			      font-size: 2vw;
+			      font-family: 'FreightBig Pro';
+			      line-height: 1em; }
+			    .yha .datecro {
+			      color: #7b7b7b;
+			      font-weight: bold;
+			      font-size: 1vw;
+			      font-family: 'ProximaNova-Light' !important;
+			      line-height: 1em; }
+			    .yha .time {
+			      font-size: 1vw;
+			      color: #7b7b7b; }
+			    .yha .marginforimage {
+			      margin-top: 30px; }
+			    .yha .margin_15_top_bottom {
+			      margin-top: 15px;
+			      margin-bottom: 15px; }
+			    .yha .margin-top5vw {
+			      margin-top: 0; }
+			    .yha .booknow a:visited, .yha .booknow a:link {
+			      font-size: 14px; } }
+			
+			/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+			@media only screen and (min-width: 120.063em) {
+			  .yha {
+			    background-size: 100%;
+			    height: 50vw; }
+			    .yha .mobilecro {
+			      display: none; }
+			    .yha .image120 {
+			      max-width: 125%; }
+			    .yha .title {
+			      font-size: 2vw;
+			      font-family: 'FreightBig Pro';
+			      line-height: 1em; }
+			    .yha .datecro {
+			      color: #7b7b7b;
+			      font-weight: bold;
+			      font-size: 1vw;
+			      font-family: 'ProximaNova-Light' !important;
+			      line-height: 1em; }
+			    .yha .time {
+			      font-size: 1vw;
+			      color: #7b7b7b; }
+			    .yha .booknow a:visited, .yha .booknow a:link {
+			      font-size: 14px; }
+			    .yha .marginforimage {
+			      margin-top: 30px; }
+			    .yha .margin_15_top_bottom {
+			      margin-top: 15px;
+			      margin-bottom: 15px; }
+			    .yha .margin-top5vw {
+			      margin-top: 5%; }
+			    .yha .inconjunctionwith {
+			      color: #7b7b7b; } }
+			
+			/* min-width 1921px, xxlarge screens */
+			/*samsung galaxy phones*/
+			@media only screen and (max-width: 40em) {
+			  .page-template-about .aboutvideopanel img {
+			    top: 58%; }
+			  .page-template-about #fancybox-content {
+			    margin-top: 10%;
+			    height: 400px !important; } }
+			
+			@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			  .page-template-about .aboutvideopanel img {
+			    top: 56%; } }
+			
+			.single-works .column ul li {
+			  margin-left: 20px; }
+			
+			@media only screen and (max-width: 1023em) {
+			  .page-template-careers .career_backgroundcolor .row .large-6:first-child {
+			    margin-bottom: 0px; } }
+			
+			/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+			@media only screen and (max-width: 40em) {
+			  .page-template-careers .career_backgroundcolor .row .large-6:first-child {
+			    margin-bottom: 0px; }
+			  .page-template-careers .career_backgroundcolor .careers_inner_div div {
+			    min-height: 400px; }
+			  .page-template-careers .slider_section {
+			    padding-bottom: 40px; }
+			    .page-template-careers .slider_section .columns:last-child {
+			      margin: 0px;
+			      padding: 0px; }
+			  .page-template-careers #joinus .h3_left_black {
+			    width: 100%;
+			    text-align: center; } }
+			
+			@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+			  .page-template-careers .slider_section {
+			    padding-bottom: 60px; }
+			    .page-template-careers .slider_section .columns:last-child {
+			      margin: 0px;
+			      padding: 0px; }
+			  .page-template-careers .career_backgroundcolor .careers_inner_div div {
+			    min-height: 300px; }
+			    .page-template-careers .career_backgroundcolor .careers_inner_div div .body_black {
+			      margin-bottom: 0; } }
+			
+			@media only screen and (min-width: 64.063em) {
+			  .page-template-careers .career_backgroundcolor .careers_inner_div div {
+			    min-height: 250px; } }
+			
+			/* min-width 1025px, large screens */
+			/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+			/* min-width 1441px, xlarge screens */
+			/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+			/* min-width 1921px, xxlarge screens */
+			@media only screen and (max-width: 40em) {
+			  .page-template-work #showfilterresults .tile-element .text-inner-wrapper {
+			    top: 55%; }
+			  .single-works .case_study_2_div .header_case_study_black {
+			    text-align: left; } }
+			
+			@media only screen and (max-width: 40em) {
+			  .page-template-blog #showfilterresults .transp_blog .header_case_study a {
+			    padding: 10px 0 5px;
+			    margin-top: 80px; } }
+			
+			@media only screen {
+			  .page-template-page-service .work-tile .tile-element .text-wrapper .text-inner-wrapper {
+			    left: 10%;
+			    right: 10%;
+			    text-align: left; }
+			  .page-template-page-service .work-tile .service-header {
+			    background-color: #F1F1F1; }
+			    .page-template-page-service .work-tile .service-header .title {
+			      font-size: .8em; } }
+			
+			/* Define mobile styles */
+			/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+			/* min-width 641px, medium screens */
+			/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+			/* min-width 1025px, large screens */
+			/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+			/* min-width 1441px, xlarge screens */
+			/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+			/* min-width 1921px, xxlarge screens */
+			.common_footer {
+			  padding: 0; }
