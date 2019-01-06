@@ -13,8 +13,8 @@ import java.text.DecimalFormat;
  */
 
 public class SoppingCart {
-	
-	private static SoppingCart soppingCart = null;
+
+	public static SoppingCart soppingCart = null;
 	public Double cartPrice= new Double(0.0);
 	public static String cartPriceRoundOff;
 	private static DecimalFormat df2 = new DecimalFormat(".##");
@@ -48,8 +48,10 @@ public class SoppingCart {
 	 */
 	public SoppingCart(Product product, int quantity){
 		cartPrice=new Double(0.0);
-		
-		if(soppingCart==null){
+		if ((quantity != 0)){
+			
+		}
+		if((soppingCart==null)){
 			soppingCart=new SoppingCart();
 			cartPrice = soppingCart.addProductToCart(product,quantity);
 			soppingCart.setCartPrice(cartPrice);
@@ -57,12 +59,13 @@ public class SoppingCart {
 			
 		}
 		else{
-		cartPrice = soppingCart.addProductToCart(product,quantity);
+		if((quantity != 0))	{
+		Double cartPrice1 = soppingCart.addProductToCart(product,quantity);
+		cartPrice=soppingCart.getCartPrice() + cartPrice1;
 		soppingCart.setCartPrice(cartPrice);
 		soppingCart.setCartPriceRoundOff(roundOff(cartPrice));
 		}
-		
-		
+		}
 	}
 	
 	/**
@@ -122,5 +125,7 @@ public class SoppingCart {
 		return df2.format(cartPrice);
 	}
 	
-	
+	public void resetShoppingCart(){
+		SoppingCart soppingCart=null;
+	}
 }
