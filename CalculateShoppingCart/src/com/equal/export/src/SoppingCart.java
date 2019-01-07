@@ -2,8 +2,7 @@
  * 
  */
 package com.equal.export.src;
-
-import java.math.RoundingMode;
+ 
 import java.text.DecimalFormat;
 
 /**
@@ -19,6 +18,18 @@ public class SoppingCart {
 	public static String cartPriceRoundOff;
 	private static DecimalFormat df2 = new DecimalFormat(".##");
 	
+	public Double cartPriceWithTax= new Double(0.0);
+	
+	public Double getCartPriceWithTax() {
+		return cartPriceWithTax;
+	}
+
+
+	public void setCartPriceWithTax(Double cartPriceWithTax) {
+		this.cartPriceWithTax = cartPriceWithTax;
+	}
+
+
 	public Double getCartPrice() {
 		return cartPrice;
 	}
@@ -121,7 +132,8 @@ public class SoppingCart {
 	 * @return roundedValueTill2Decimal
 	 */
 	public String roundOff(Double cartPrice){
-		df2.setRoundingMode(RoundingMode.HALF_DOWN);
+		cartPrice = (double) Math.round(cartPrice * 100);
+		cartPrice = cartPrice/100;
 		return df2.format(cartPrice);
 	}
 	
