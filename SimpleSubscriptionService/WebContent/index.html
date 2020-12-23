@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+<style>
+body {
+  background-color: #E6E6FA;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	   $("#fromDate").datepicker({
+	       format: 'dd-mm-yyyy',
+	       autoclose: true,
+	   }).on('changeDate', function (selected) {
+	       var minDate = new Date(selected.date.valueOf());
+	       $('#toDate').datepicker('setStartDate', minDate);
+	   });
+
+	   $("#toDate").datepicker({
+	       format: 'dd-mm-yyyy',
+	       autoclose: true,
+	   }).on('changeDate', function (selected) {
+	           var minDate = new Date(selected.date.valueOf());
+	          var orginalDate = new Date(selected);
+	          var monthsAddedDate = new Date(new Date(orginalDate).setMonth(orginalDate.getMonth() + 3));
+               alert(monthsAddedDate.date.valueOf());
+	           $('#fromDate').datepicker('setEndDate', monthsAddedDate);
+	   });
+	   
+	   $("#Submit").click(function() {
+	        var fromDate = $("fromDate").val();
+	        var toDate = $("toDate").val();
+	        if(fromDate-toDate > 90){
+	        	alert("Billing predior should be within 90 days");
+	        	return;
+	        }
+	            $('#form1').attr('action', '*.do?&invoiveAmount='+$('#invoiveAmount').val()+'&subsType='+$('#subsType').val()
+	            		+'&fromDate='+$('#fromDate').val()+'&toDate='+$('#toDate').val()+'&periods='+$('#textboxes').val());
+	            var action = $("#form1").attr("action"); 
+	           alert(action);
+	            
+	   });
+	   $("#subsType").change(function() {
+		   var value=$("subsType").val();
+		   var selectBox = document.getElementById("subsType");
+		   var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+		   if (selectedValue!=null){
+		   $('#periods').show();
+		   }
+		   else {
+		   $('#periods').hide();
+		   }
+		   
+	   });
+	});
+function changeFunc() {
+	var selectBox = document.getElementById("subsType");
+	var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+	console.log(selectedValue);
+	if (selectedValue!=null){
+	$('#textboxes').show();
+	}
+	else {
+	alert("Error");
+	$('#textboxes').hide();
+	}
+	}
+</script>
+<form action="*.do" method="GET" id="form1">
+<label>The amount to charge per invoice</label> <input type="text" placeholder="subscription charge" id="invoiveAmount"/> 
+<br></br>
+<label>Subscription Type</label> 
+<select name="subsType" id="subsType" onchange="changeFunc();">
+  <option value="weekly">WEEKLY</option>
+  <option value="monthly">MONTHLY</option>
+</select>
+<input name="dd_number" placeholder="day of week/month" type="text" style="display: none" id="textboxes">
+<br></br>
+<label>Start Date</label> <input type="text" placeholder="Start Date" id="fromDate"></input>
+<br></br>
+<label>End Date</label><input type="text" placeholder="End Date" id="toDate"></input>
+<br></br>
+<button id="Submit">Submit
+</button>
+</form>
+</body>
+</html>
